@@ -1,0 +1,721 @@
+:root{
+    --azul: #102A3C;
+    --morado: #6964E2;
+    --fondo: #CED8E1;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+/* Utilidades */
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.centrar{
+    margin: 0 auto;
+}
+
+.cuadro-azul{
+    background-color: var(--azul);
+    border-radius: 1.2rem;
+}
+
+.cuadro-morado{
+    background-color: var(--morado);
+    border-radius: 1.2rem;
+}
+
+/* Header */
+
+.contenido-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header .cuadro-azul{
+    width: 18rem;
+    height: 7rem;
+}
+
+.simbolos-header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    width: 10rem;
+}
+
+.figuras-header .cuadro-morado{
+    width: 4rem;
+    height: 0.3rem;
+}
+
+.figuras-header .grande{
+    height: 0.5rem;
+}
+
+/* Main */
+
+.main{
+    background-color: var(--azul)!important;
+    position: relative;
+    height: 47rem;
+}
+
+.contenido-main{
+    width: 100rem;
+    padding-top: 2rem;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    width: 60rem;
+}
+
+.titulos .cuadro-morado{
+    height: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.titulos .c-1{
+    width: 13rem;
+}
+
+.titulos .c-2{
+    width: 23rem;
+}
+
+.titulos .c-3{
+    width: 19rem;
+}
+
+.texto-main{
+    margin-top: 2rem;
+    width: 65rem;
+}
+
+.tx1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 58rem;
+}
+
+.tx2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 64rem;
+}
+
+.tx3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+}
+
+.texto-main .cuadro-morado{
+    height: 0.5rem;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.texto-main .c-1{
+    width: 9rem;
+}
+
+.texto-main .c-2{
+    width: 8rem;
+}
+
+.texto-main .c-3{
+    width: 9rem;
+}
+
+.texto-main .c-4{
+    width: 4rem;
+}
+
+.texto-main .c-5{
+    width: 15rem;
+}
+
+.texto-main .c-6{
+    width: 8rem;
+}
+
+.texto-main .c-7{
+    width: 16rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-8{
+    width: 3rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-9{
+    width: 10rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-10{
+    width: 4rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-11{
+    width: 2rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-12{
+    width: 7rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-13{
+    width: 6rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-14{
+    width: 6rem;
+    height: 0.7rem;
+}
+
+.texto-main .c-15{
+    width: 1rem;
+}
+
+.texto-main .c-16{
+    width: 6rem;
+}
+
+.texto-main .c-17{
+    width: 10rem;
+}
+
+.texto-main .c-18{
+    width: 6rem;
+}
+
+.contenido-arriba .boton{
+    height: 4rem;
+    width: 20rem;
+    border-radius: 1.8rem;
+    margin: 2rem auto;
+}
+
+.contenido-abajo{
+    margin-left: 10rem;
+    position: absolute;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80rem;
+}
+
+.contenido-abajo .cuadro-morado{
+    height: 20rem;
+    width: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Casillas Pequenias */
+
+.casillas-pequenias{
+    margin-top: 15rem;
+}
+
+.titulo-primario{
+    width: 25rem;
+    display: flex;
+}
+
+.titulo-primario .cuadro-azul{
+    height: 0.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.casillas-pequenias .largo{
+    width: 10rem;
+}
+
+.casillas-pequenias .corto{
+    width: 5rem;
+}
+
+.casillas-flex{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.casilla .cuadro-morado{
+    margin-left: 2rem;
+    height: 20rem;
+    width: 22rem;
+}
+
+.titulo-secundario{
+    width: 25rem;
+    display: flex;
+}
+
+.titulo-secundario .cuadro-azul{
+    height: 0.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.titulo-secundario .largo{
+    margin-left: 5rem;
+    width: 8rem;
+}
+
+.titulo-secundario .corto{
+    width: 3rem;
+}
+
+/* Casillas Grandes */
+
+.casillas-grandes{
+    margin-top: 5rem;
+}
+
+.casillas-grandes .titulo-primario{
+    height: 0.8rem;
+}
+
+.casillas-grandes .titulo-primario .corto{
+    width: 6rem;
+}
+
+.casillas-grandes .titulo-primario .largo{
+    width: 12rem;
+}
+
+.casillas-grandes .cuadro-morado{
+    margin-top: 3rem;
+    height: 22rem;
+    width: 52rem;
+}
+
+.casillas-grandes .titulo-secundario{
+    width: 30rem;
+    margin-left: 3rem;
+}
+
+.casillas-grandes .titulo-secundario .corto{
+    width: 8rem;
+    height: 1rem;
+}
+
+.casillas-grandes .titulo-secundario .largo{
+    margin-left: 1rem;
+    width: 15rem;
+    height: 1rem;
+}
+
+.casillas-grandes .tx1{
+    width: 45rem;
+    margin-left: 3rem;
+}
+
+.casillas-grandes .tx2{
+    width: 50rem;
+    margin-left: 3rem;
+}
+
+.casillas-grandes .tx3{
+    width: 30rem;
+    margin-left: 3rem;
+}
+
+.casillas-grandes .tx1 .cuadro-azul{
+    height: 0.3rem;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.casillas-grandes .tx2 .cuadro-azul{
+    height: 0.5rem;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.casillas-grandes .tx3 .cuadro-azul{
+    height: 0.3rem;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.casillas-grandes .texto-casilla .c-1{
+    width: 6rem;
+}
+
+.casillas-grandes .texto-casilla .c-2{
+    width: 4rem;
+}
+
+.casillas-grandes .texto-casilla .c-3{
+    width: 6rem;
+}
+
+.casillas-grandes .texto-casilla .c-4{
+    width: 4rem;
+}
+
+.casillas-grandes .texto-casilla .c-5{
+    width: 9rem;
+}
+
+.casillas-grandes .texto-casilla .c-6{
+    width: 5rem;
+}
+
+.casillas-grandes .texto-casilla .c-7{
+    width: 10rem;
+}
+
+.casillas-grandes .texto-casilla .c-8{
+    width: 2rem;
+}
+
+.casillas-grandes .texto-casilla .c-9{
+    width: 6rem;
+}
+
+.casillas-grandes .texto-casilla .c-10{
+    width: 3rem;
+}
+
+.casillas-grandes .texto-casilla .c-11{
+    width: 2rem;
+}
+
+.casillas-grandes .texto-casilla .c-12{
+    width: 5rem;
+}
+
+.casillas-grandes .texto-casilla .c-13{
+    width: 4rem;
+}
+
+.casillas-grandes .texto-casilla .c-14{
+    width: 5rem;
+}
+
+.casillas-grandes .texto-casilla .c-15{
+    width: 4rem;
+}
+
+.casillas-grandes .texto-casilla .c-16{
+    width: 7rem;
+}
+
+.casillas-grandes .texto-casilla .c-17{
+    width: 3rem;
+}
+
+.casillas-grandes .texto-casilla .c-18{
+    width: 6rem;
+}
+
+.casillas-grandes .texto-casilla .c-19{
+    width: 6rem;
+}
+
+/* Carousel */
+
+.imagenes{
+    margin-top: 5rem;
+}
+
+.imagenes .largo{
+    width: 8rem;
+}
+
+.imagenes .corto{
+    width: 4rem;
+}
+
+.contenido-carousel{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.carousel .cuadro-morado{
+    height: 15rem;
+    width: 30rem;
+    margin: auto 2rem;
+}
+
+/* Blog */
+
+.blog{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog .cuadro-morado{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.contenido-blog .titulo-secundario{
+    margin-left: 0;
+    width: 60rem;
+    margin-bottom: 2rem;
+}
+
+.contenido-blog .titulo-secundario .cuadro-azul{
+    height: 1rem;
+    margin-left: 0;
+}
+
+.contenido-blog .corto{
+    width: 5rem;
+}
+
+.contenido-blog .medio{
+    width: 6rem;
+}
+
+.contenido-blog .largo{
+    width: 10rem;
+}
+
+.contenido-blog .texto-blog{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90rem;
+}
+
+.texto-blog .cuadro-azul{
+    height: 0.5rem;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.texto-blog .c-1{
+    width: 8rem;
+}
+
+.texto-blog .c-2{
+    width: 6rem;
+}
+
+.texto-blog .c-3{
+    width: 8rem;
+}
+
+.texto-blog .c-4{
+    width: 6rem;
+}
+
+.texto-blog .c-5{
+    width: 10rem;
+}
+
+.texto-blog .c-6{
+    width: 6rem;
+}
+
+.texto-blog .c-7{
+    width: 10rem;
+}
+
+.texto-blog .c-8{
+    width: 4rem;
+}
+
+.texto-blog .c-9{
+    width: 6rem;
+}
+
+.texto-blog .c-10{
+    width: 4rem;
+}
+
+.texto-blog .c-11{
+    width: 3rem;
+}
+
+.texto-blog .c-12{
+    width: 7rem;
+}
+
+.texto-blog .c-13{
+    width: 6rem;
+}
+
+.texto-blog .c-14{
+    width: 6rem;
+}
+
+.texto-blog .c-15{
+    width: 5rem;
+}
+
+.texto-blog .c-16{
+    width: 8rem;
+}
+
+.texto-blog .c-17{
+    width: 5rem;
+}
+
+.texto-blog .c-18{
+    width: 8rem;
+}
+
+.texto-blog .c-19{
+    width: 7rem;
+}
+
+.texto-blog .c-20{
+    width: 9rem;
+}
+
+.texto-blog .c-21{
+    width: 3rem;
+}
+
+.texto-blog .c-22{
+    width: 3rem;
+}
+
+.texto-blog .c-23{
+    width: 7rem;
+}
+
+.texto-blog .c-24{
+    width: 7rem;
+}
+
+.texto-blog .c-25{
+    width: 8rem;
+}
+
+.texto-blog .c-26{
+    width: 4rem;
+}
+
+.texto-blog .c-27{
+    width: 6rem;
+}
+
+.texto-blog .c-28{
+    width: 2rem;
+}
+
+.texto-blog .c-29{
+    width: 2rem;
+}
+
+.texto-blog .c-30{
+    width: 7rem;
+}
+
+.texto-blog .c-31{
+    width: 5rem;
+}
+
+.texto-blog .c-32{
+    width: 5rem;
+}
+
+.texto-blog .c-33{
+    width: 4rem;
+}
+
+.texto-blog .c-34{
+    width: 6rem;
+}
+
+.texto-blog .c-35{
+    width: 2rem;
+}
+
+.texto-blog .c-36{
+    width: 4rem;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--azul);
+    height: 18rem;
+}
+
+.contenido-footer{
+    max-width: 40rem;
+}
+
+.botones{
+    padding-top: 3rem;
+    max-width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones .cuadro-morado{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.lineas{
+    margin-top: 3rem;
+    max-width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lineas .cuadro-morado{
+    width: 8rem;
+    height: 0.5rem;   
+    margin-left: 1rem;
+    margin-right: 1rem; 
+}
